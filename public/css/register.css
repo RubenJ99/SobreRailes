@@ -1,0 +1,64 @@
+.main__section__header--title {
+  font-family: "Oswald", sans-serif;
+  background-color: #ffa319;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 0.5fr;
+  grid-template-rows: 0.5fr 2fr 0.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . ."
+    ". Form ."
+    "Footer Footer Footer";
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Banner Banner Banner"
+    "Nombre Nombre Nombre"
+    "Correo Correo Correo"
+    "Pass Pass Pass"
+    "Pass2 Pass2 Pass2"
+    "Terminos Terminos Go";
+  grid-area: Form;
+}
+
+.main__section__header{
+  grid-area: Banner;
+}
+
+.main__section__article--username {
+  grid-area: Nombre;
+}
+
+.main__section__article--email {
+  grid-area: Correo;
+}
+
+.main__section__article--password {
+  grid-area: Pass;
+}
+
+.main__section__article--password2 {
+  grid-area: Pass2;
+}
+
+.main__section__register--btn {
+  grid-area: Go;
+}
+
+.main__section__register--terms {
+  grid-area: Terminos;
+}
+
+footer {
+    grid-area: Footer;
+}
