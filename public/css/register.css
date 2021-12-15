@@ -1,24 +1,31 @@
-.main__section__header--title {
-  font-family: "Oswald", sans-serif;
-  background-color: #ffa319;
+body,html {
+  width:100%;
+  height: 100%;
 }
-
 body {
-  display: grid;
-  grid-template-columns: 0.5fr 2fr 0.5fr;
-  grid-template-rows: 0.5fr 2fr 0.5fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    ". . ."
-    ". Form ."
-    "Footer Footer Footer";
+  width: 100%;
+  height: 100%;
+  display: grid; 
+  grid-template-columns: 25% 50% 0.1% 25%; 
+  grid-template-rows: 10% 50% 20% 20%; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". . . ."
+    ". Form . ."
+    ". . . ."
+    "Footer Footer Footer Footer"; 
+    background-color: #0066B3;
 }
 
 .main {
+  width:100%;
+  height: 100%;
+  background-color: #B36F09;
+  border: 10px solid black;
+  border-radius: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 0.3fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
@@ -29,36 +36,83 @@ body {
     "Pass2 Pass2 Pass2"
     "Terminos Terminos Go";
   grid-area: Form;
+  align-self: center;
+  font-family: 'Montserrat', sans-serif;
+}
+.main__section__header--title {
+  font-family: 'Bakbak One', cursive;
+  background-color: #ffa319;
 }
 
 .main__section__header{
   grid-area: Banner;
+  text-align: center;
+  width: 100%;
 }
 
 .main__section__article--username {
   grid-area: Nombre;
+  display: flex;
+  justify-content: center;
+  height: 70%;
 }
 
 .main__section__article--email {
   grid-area: Correo;
+  display: flex;
+  justify-content: center;
+  height: 70%;
 }
 
 .main__section__article--password {
   grid-area: Pass;
+  display: flex;
+  justify-content: center;
+  height: 70%;
 }
 
 .main__section__article--password2 {
   grid-area: Pass2;
+  display: flex;
+  justify-content: center;
+  height: 70%;
 }
 
-.main__section__register--btn {
+.main__section__article--btn {
   grid-area: Go;
+  display: flex;
+  justify-content: center;
 }
 
-.main__section__register--terms {
+.main__section__article--terms {
   grid-area: Terminos;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-left: 30px;
 }
 
 footer {
     grid-area: Footer;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    color:white;
+}
+
+#bRegister{
+  background-color: #199CFF;
+  padding: 10px;
+  margin: 10px;
+  font-weight: bolder;
+  color: black;
+}
+#bRegister:hover{
+  cursor:pointer;
+  background-color: #ffa319;
+  transition: 5ms;
 }
