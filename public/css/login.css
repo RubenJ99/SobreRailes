@@ -22,12 +22,6 @@ input {
   height: 30px;
 }
 
-.main__section__article--terms>input {
-  width:100px;
-  height: 20px;
-}
-
-
 .main {
   width:100%;
   height: 100%;
@@ -36,16 +30,14 @@ input {
   border-radius: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 0.3fr;
+  grid-template-rows: 1fr 1fr 1fr 0.3fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
     "Banner Banner Banner"
-    "Nombre Nombre Nombre"
     "Correo Correo Correo"
     "Pass Pass Pass"
-    "Pass2 Pass2 Pass2"
-    "Terminos Terminos Go";
+    "Back . Go";
   grid-area: Form;
   align-self: center;
   font-family: 'Montserrat', sans-serif;
@@ -62,13 +54,6 @@ input {
   width: 100%;
 }
 
-.main__section__article--username {
-  grid-area: Nombre;
-  display: flex;
-  justify-content: center;
-  height: 70%;
-}
-
 .main__section__article--email {
   grid-area: Correo;
   display: flex;
@@ -83,12 +68,6 @@ input {
   height: 70%;
 }
 
-.main__section__article--password2 {
-  grid-area: Pass2;
-  display: flex;
-  justify-content: center;
-  height: 70%;
-}
 
 .main__section__article--btn {
   grid-area: Go;
@@ -96,13 +75,12 @@ input {
   justify-content: center;
 }
 
-.main__section__article--terms {
-  grid-area: Terminos;
+.main__section__article--btnBack {
+  grid-area: Back;
   display: flex;
-  justify-content: left;
-  align-items: center;
-  margin-left: 30px;
+  justify-content: center;
 }
+
 
 footer {
     grid-area: Footer;
@@ -130,3 +108,17 @@ footer {
   transition: 5ms;
 }
 
+#bBack {
+  background-color: #199CFF;
+  padding: 10px;
+  margin: 10px;
+  font-weight: bolder;
+  color: black;
+  border-radius: 7px;
+}
+
+#bBack:hover{
+  cursor:pointer;
+  background-color: red;
+  transition: 5ms;
+}
