@@ -1,5 +1,5 @@
 // CONSTANTES
-DIR_IMG = "../media/";
+DIR_IMG = "../../public/media/";
 LARGO = "600";
 ALTO = "400";
 POSX_INICIAL = Math.round(LARGO/2) - 15;
