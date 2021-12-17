@@ -2,75 +2,9 @@
   box-sizing: inherit;
 }
 
-body {
-  display: grid;
-  grid-template-areas:
-    'header header header'
-    'main main main'
-    'footer footer footer';
-  margin: 2%;
-}
-
 canvas {
   background-image: url('../media/fondoJuego.jpg');
   background-repeat: none;
   background-size: cover;
 }
 
-.cabecera {
-  grid-area: header;
-  width: 100%;
-  background: linear-gradient(to bottom, #0066B3, #199CFF 80%, #0066B3);
-  border: solid 3px #0066B3;
-  border-radius: 10px;
-}
-
-.cabecera__nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  height: 100%;
-}
-
-.cabecera__nav__a {
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  height: 100%;
-}
-
-.main {
-  grid-area: main;
-  display: flex;
-  justify-content: center;
-  margin-top: 5%;
-}
-
-.main__section {
-  width: 80%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 5%;
-}
-
-.main__aside--left {
-  width: 20%;
-}
-
-.main__aside--right {
-  width: 20%;
-}
-
-.main__aside__img {
-  width: 100%;
-}
-
-.footer {
-  grid-area: footer;
-  text-align: center;
-  margin-top: 5%;
-}

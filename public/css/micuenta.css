@@ -2,13 +2,6 @@
   box-sizing: inherit;
 }
 
-body, html {
-  width: 98%;
-  height: 100%;
-  margin-left: 1%;
-  margin-right: 1%;
-}
-
 body {
   display: grid;
   grid-template-areas:
@@ -33,10 +26,10 @@ body {
   grid-area: header;
   width: 100%;
   background: linear-gradient(to bottom, #0066B3, #199CFF 80%, #0066B3);
-  background-color: #199CFF;
   border: solid 3px #0066B3;
   border-radius: 10px;
   margin-top: 5px;
+  height: 50px;
 }
 
 .cabecera__nav {
@@ -44,7 +37,6 @@ body {
   justify-content: center;
   flex-direction: row;
   padding: 5px;
-  height: 100%;
 }
 
 .cabecera__nav__a {
@@ -74,13 +66,13 @@ body {
   width: 80%;
   text-align: center;
   display: grid;
-  grid-template-columns: 50%,50%;
-  grid-template-rows: 25%,25%,25%,25%;
-  grid-template-areas: 
-  'Username Username'
-  'Email Email'
-  'Iban Iban'
-  'Pass Pass';
+  grid-template-columns: 50%, 50%;
+  grid-template-rows: 25%, 25%, 25%, 25%;
+  grid-template-areas:
+    'Username Username'
+    'Email Email'
+    'Iban Iban'
+    'Pass Pass';
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 5%;
@@ -89,59 +81,64 @@ body {
   border-radius: 10px;
 }
 
-.main__section__article--username{
+.main__section__article--username {
   grid-area: Username;
   display: grid;
-  grid-template-columns: 50%,50%;
-  grid-template-areas: 
-  'title mycontent';
+  grid-template-columns: 50%, 50%;
+  grid-template-areas:
+    'title mycontent';
 
 }
 
-.title{
+.title {
   grid-area: title;
   align-items: center;
   justify-content: center;
   font-family: 'Oswald', sans-serif;
   font-weight: bolder;
 }
+
 .content {
   grid-area: mycontent;
   align-items: right;
   justify-content: right;
   font-family: 'Montserrat', sans-serif;
 }
-.main__section__article--email{
+
+.main__section__article--email {
   grid-area: Email;
   display: grid;
-  grid-template-columns: 50%,50%;
-  grid-template-areas: 
-  'title mycontent';
-  
-}
-.main__section__article--iban{
-  grid-area: Iban;
-  display: grid;
-  grid-template-columns: 50%,50%;
-  grid-template-areas: 
-  'title mycontent';
-  
-}
-.main__section__article--password{
-  grid-area: Pass;
-  display: grid;
-  grid-template-columns: 50%,50%;
-  grid-template-areas: 
-  'title mycontent';
-  
+  grid-template-columns: 50%, 50%;
+  grid-template-areas:
+    'title mycontent';
+
 }
 
-input{
+.main__section__article--iban {
+  grid-area: Iban;
+  display: grid;
+  grid-template-columns: 50%, 50%;
+  grid-template-areas:
+    'title mycontent';
+
+}
+
+.main__section__article--password {
+  grid-area: Pass;
+  display: grid;
+  grid-template-columns: 50%, 50%;
+  grid-template-areas:
+    'title mycontent';
+
+}
+
+input {
   width: 50px;
   height: 40px;
   border-radius: 5px;
   padding-right: 150px;
 }
+
 .footer {
   grid-area: footer;
   display: flex;
@@ -157,7 +154,7 @@ input{
   margin-top: 30px;
 }
 
-.cabecera__nav__a:hover{
+.cabecera__nav__a:hover {
   transition: 7ms;
   background-color: #B36F09;
   background: linear-gradient(to bottom, #B36F09, #B36F09 80%, #B36F09);

@@ -1,10 +1,9 @@
 
+
 body {
-  width: 100%;
-  height: 100%;
   display: grid;
   grid-template-columns: 25% 50% 0.1% 25%;
-  grid-template-rows: 10% 50% 20% 20%;
+  grid-template-rows: 10% 50% 29% 11%;
   gap: 0px 0px;
   grid-template-areas:
     ". . . ."
@@ -49,6 +48,7 @@ input {
   grid-area: Banner;
   text-align: center;
   width: 100%;
+  margin-bottom: 10px;
 }
 
 .main__section__article--email {
@@ -56,6 +56,7 @@ input {
   display: flex;
   justify-content: center;
   height: 70%;
+  margin: 5px;
 }
 
 .main__section__article--password {
@@ -63,6 +64,7 @@ input {
   display: flex;
   justify-content: center;
   height: 70%;
+  margin: 5px;
 }
 
 
@@ -78,17 +80,18 @@ input {
   justify-content: center;
 }
 
-
-footer {
-    grid-area: Footer;
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: black;
-    color:white;
+.footer {
+  grid-area: Footer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  background-color: black;
+  color: white;
+  margin-top: 30px;
 }
 
 #bRegister{
