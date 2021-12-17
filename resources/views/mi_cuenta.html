@@ -2,56 +2,55 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SobreRailes</title>
-    <link rel="shortcut icon" href="../../public/media/favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SobreRailes</title>
+  <link rel="shortcut icon" href="/public/media/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/public/css/main.css">
+  <link rel="stylesheet" href="/public/css/micuenta.css">
 </head>
 
 <body>
 
-    <header class="cabecera">
-        <nav class="cabecera__nav">
-            <a href="" class="cabecera__nav__a  cabecera__nav__a--login">LOG IN</a>
-            <a href="" class="cabecera__nav__a cabecera__nav__a--singup">SIGN UP</a>
-        </nav>
-    </header>
+  <header class="cabecera">
+    <nav class="cabecera__nav">
+      <a href="./check_billete.html" class="cabecera__nav__a  cabecera__nav__a--login">CHECK BILLETE</a>
+      <a href="./historial.html" class="cabecera__nav__a cabecera__nav__a--singup">HISTORIAL</a>
+      <a href="./mi_cuenta.html" class="cabecera__nav__a  cabecera__nav__a--login">MI CUENTA</a>
+      <a href="./juego.html" class="cabecera__nav__a cabecera__nav__a--singup">JUEGO</a>
+    </nav>
+  </header>
 
-    <main class="main">
-        <section class="main__section">
+  <main class="main">
+    <section class="main__section">
+      <article class="main__section__article--username">
+        <div class="title">Nombre:</div> 
+        <div class="content">Valeria Sanchez</div>
+      </article>
+      <article class="main__section__article--email">
+        <div class="title" >Email:</div>     
+        <div class="content">valerys@yahoo.com</div>
+      </article>
 
-            <header class="main__section__header">
-                <h1 class="main__section__header__h1">Ofertas Flash!</h1>
-            </header>
+      <article class="main__section__article--iban">
+        <div class="title" >IBAN:</div>
+        <div class="content"><input type="text" name="IBAN" id="IBAN" placeholder="INSERTE UNA TARJETA"></div>
+      </article>
 
-            <article class="main__section__ofertas">
-                <span class="main__section__ofertas__span">Oferta 1</span>
-            </article>
+      <article class="main__section__article--password">
+        <div class="title">Contraseña:</div>
+       <div class="content"><input type="text" name="password" id="password" placeholder="Cambiar contraseña"></div>
+      </article>
 
-            <article class="main__section__ofertas">
-                <span class="main__section__ofertas__span">Oferta 2</span>
-            </article>
+    </section>
+  </main>
 
-            <article class="main__section__ofertas">
-                <span class="main__section__ofertas__span">Oferta 3</span>
-            </article>
+  <footer class="footer">
+    <p class="footer__paragraph footer__paragraph--autor">Ruben Juarez, Angel Mansilla y Carlos Piña</p>
+    <p class="footer__paragraph footer__paragraph--marca">SobreRailes®</p>
+  </footer>
 
-        </section>
-
-        <aside class="main__aside">
-            <img class="main__aside__img" src="" alt="bannerPublicidad1">
-        </aside>
-
-        <aside class="main__aside">
-            <img class="main__aside__img" src="" alt="bannerPublicidad2">
-        </aside>
-    </main>
-
-    <footer class="footer">
-        <p class="footer__paragraph footer__paragraph--autor">Ruben Juarez, Angel Mansilla y Carlos Piña</p>
-        <p class="footer__paragraph footer__paragraph--marca">SobreRailes®</p>
-    </footer>
 </body>
 
 </html>
