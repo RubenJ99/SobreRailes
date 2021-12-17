@@ -2,38 +2,35 @@
     box-sizing: inherit;
   }
   
-  body {
+  body, html {
     width: 100%;
     height: 100%;
-    padding: 0;
+  }
+  
+  body {
     display: grid;
-    grid-template-columns: 33% 33% 33%; 
-    grid-template-rows: 10% 70% 20%; 
     grid-template-areas:
       'header header header'
       'main main main'
+      'main main main'
+      'main main main'
+      'main main main'
+      'main main main'
+      'main main main'
+      'main main main'
+      'main main main'
+      'main main main'
+      'main main main'
+      'main main main'
+      'main main main'
       'footer footer footer';
-    margin: 2%;
-  }
-  a {
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    color:black;
-    font-weight: bolder;
-    border-radius: 10px;
-    border: 3px solid black;
-    width:100px;
-    margin: 4px;
+    background-color: #0066B3;
   }
   
-  a:hover {
-    transition: 5ms;
-    background-color: #B36F09;
-  }
   .cabecera {
     grid-area: header;
     width: 100%;
-    height: 50px;
+    background-color: #199CFF;
   }
   
   .cabecera__nav {
@@ -47,8 +44,22 @@
   .cabecera__nav__a {
     display: flex;
     align-items: center;
-    padding: 20px;
-    height: 100%;
+    padding: 5px;
+    background-color: #FFA319;
+    font-weight: bolder;
+    color: black;
+    border-radius: 10px;
+    margin-left: 15px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px;
+  }
+  .cabecera__nav__a:hover{
+      transition: 7ms;
+      background-color: #B36F09;
+      cursor: pointer;
+      transform: scale(1.1);
+      font-style: italic;
   }
   
   .main {
@@ -56,9 +67,6 @@
     display: flex;
     justify-content: center;
     margin-top: 5%;
-    background-image: url('/public/media/background.jpg');
-    background-repeat: no-repeat;
-    object-fit: cover;
   }
   
   .main__section {
@@ -69,6 +77,16 @@
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 5%;
+    background-color: #FFA319;
+    border-radius: 5%;
+  }
+  
+  .main__section__header {
+    background-color: #B36F09;
+  }
+  
+  .main__section__ofertas {
+    background-color: #FFAD33;
   }
   
   .main__aside--left {
@@ -80,12 +98,22 @@
   }
   
   .main__aside__img {
-    width: 100%;
+    width: 96%;
+    border: solid 2px #B36F09;
   }
   
   .footer {
     grid-area: footer;
-    text-align: center;
-    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    grid-area: footer;
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    color: white;
+    margin-top: 30px;
   }
   
