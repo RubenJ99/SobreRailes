@@ -2,57 +2,159 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SobreRailes</title>
-    <link rel="shortcut icon" href="../../public/media/favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SobreRailes</title>
+  <link rel="shortcut icon" href="../../public/media/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../../public/css/main.css">
+  <link rel="stylesheet" href="../../public/css/check_billete.css">
 </head>
 
 <body>
 
-    <header class="cabecera">
-        <nav class="cabecera__nav">
-            <a href="./check_billete.html" class="cabecera__nav__a  cabecera__nav__a--login">BUSCAR TICKETS</a>
-            <a href="./historial.html" class="cabecera__nav__a cabecera__nav__a--singup">HISTORIAL</a>
-            <a href="./mi_cuenta.html" class="cabecera__nav__a  cabecera__nav__a--login">MI CUENTA</a>
-        </nav>
-    </header>
+  <header class="cabecera">
+    <nav class="cabecera__nav">
+      <a href="./check_billete.html" class="cabecera__nav__a  cabecera__nav__a--login">BUSCAR TICKETS</a>
+      <a href="./historial.html" class="cabecera__nav__a cabecera__nav__a--singup">HISTORIAL</a>
+      <a href="./mi_cuenta.html" class="cabecera__nav__a  cabecera__nav__a--login">MI CUENTA</a>
+    </nav>
+  </header>
 
-    <main class="main">
-        <section class="main__section">
+  <main class="main">
+    <aside class="main__aside main__aside--left">
+      <img class="main__aside__img" src="../../public/media/banner_tren1.png" alt="bannerPublicidad1">
+      <img class="main__aside__img" src="../../public/media/banner_tren3.png" alt="bannerPublicidad3">
+      <img class="main__aside__img" src="../../public/media/banner_tren5.png" alt="bannerPublicidad5">
+    </aside>
 
-            <header class="main__section__header">
-                <h1 class="main__section__header__h1">Ofertas Flash!</h1>
-            </header>
+    <section class="main__section">
 
-            <article class="main__section__ofertas">
-                <span class="main__section__ofertas__span">Oferta 1</span>
-            </article>
+      <header class="main__section__header">
+        <article class="main__section__header__seleccion main__section__header__seleccion--salida">
+          <input type="text" class="main__section__header__seleccion__lugar" placeholder="Salida...">
+          <input type="date" class="main__section__header__seleccion__fecha">
+        </article>
 
-            <article class="main__section__ofertas">
-                <span class="main__section__ofertas__span">Oferta 2</span>
-            </article>
+        <article class="main__section__header__seleccion main__section__header__seleccion--destino">
+          <input type="text" class="main__section__header__seleccion__lugar" placeholder="Destino...">
+          <input type="date" class="main__section__header__seleccion__fecha">
+        </article>
+      </header>
 
-            <article class="main__section__ofertas">
-                <span class="main__section__ofertas__span">Oferta 3</span>
-            </article>
-
+      <article class="main__section__ofertas">
+        <section class="main__section__ofertas__header">
+          <span
+            class="main__section__ofertas__header__span main__section__ofertas__header__span--desplazamiento">Origen-Destino</span>
+          <span class="main__section__ofertas__header__span main__section__ofertas__header__span--horaSalida">Hora
+            salida</span>
+          <span class="main__section__ofertas__header__span main__section__ofertas__header__span--horaLlegada">Hora
+            llegada</span>
+          <span
+            class="main__section__ofertas__header__span main__section__ofertas__header__span--empresa">Empresa</span>
+          <span class="main__section__ofertas__header__span main__section__ofertas__header__span--precio">Precio</span>
+        </section>
+        <section class="main__section__ofertas__billete">
+          <span
+            class="main__section__ofertas__billete__span main__section__ofertas__billete__span--desplazamiento">Madrid-Barcelona</span>
+          <span
+            class="main__section__ofertas__billete__span main__section__ofertas__billete__span--horaSalida">20:00</span>
+          <span
+            class="main__section__ofertas__billete__span main__section__ofertas__billete__span--horaLlegada">22:30</span>
+          <span class="main__section__ofertas__billete__span main__section__ofertas__billete__span--empresa">AVE</span>
+          <span
+            class="main__section__ofertas__billete__span main__section__ofertas__billete__span--precio">77,10€</span>
         </section>
 
-        <aside class="main__aside">
-            <img class="main__aside__img" src="" alt="bannerPublicidad1">
-        </aside>
+        <section class="main__section__ofertas__billete">
+          <span
+            class="main__section__ofertas__billete__span main__section__ofertas__billete__span--desplazamiento">Sevilla- Madrid</span>
+          <span
+            class="main__section__ofertas__billete__span main__section__ofertas__billete__span--horaSalida">18:43</span>
+          <span
+            class="main__section__ofertas__billete__span main__section__ofertas__billete__span--horaLlegada">21:17</span>
+          <span class="main__section__ofertas__billete__span main__section__ofertas__billete__span--empresa">AVE</span>
+          <span
+            class="main__section__ofertas__billete__span main__section__ofertas__billete__span--precio">92,50€</span>
+        </section>
 
-        <aside class="main__aside">
-            <img class="main__aside__img" src="" alt="bannerPublicidad2">
-        </aside>
-    </main>
+        <section class="main__section__ofertas__billete">
+          <span
+            class="main__section__ofertas__billete__span main__section__ofertas__billete__span--desplazamiento">Badajoz-Caceres</span>
+          <span
+            class="main__section__ofertas__billete__span main__section__ofertas__billete__span--horaSalida">14:30</span>
+          <span
+            class="main__section__ofertas__billete__span main__section__ofertas__billete__span--horaLlegada">16:10</span>
+          <span
+            class="main__section__ofertas__billete__span main__section__ofertas__billete__span--empresa">RENFE</span>
+          <span class="main__section__ofertas__billete__span main__section__ofertas__billete__span--precio">7,45€</span>
+        </section>
 
-    <footer class="footer">
-        <p class="footer__paragraph footer__paragraph--autor">Ruben Juarez, Angel Mansilla y Carlos Piña</p>
-        <p class="footer__paragraph footer__paragraph--marca">SobreRailes®</p>
-    </footer>
+        <section class="main__section__ofertas__billete">
+          <span
+            class="main__section__ofertas__billete__span main__section__ofertas__billete__span--desplazamiento">Bilbao-Tarragona</span>
+          <span
+            class="main__section__ofertas__billete__span main__section__ofertas__billete__span--horaSalida">15:20</span>
+          <span
+            class="main__section__ofertas__billete__span main__section__ofertas__billete__span--horaLlegada">21:30</span>
+          <span
+            class="main__section__ofertas__billete__span main__section__ofertas__billete__span--empresa">ALVIA</span>
+          <span
+            class="main__section__ofertas__billete__span main__section__ofertas__billete__span--precio">46,55€</span>
+        </section>
+
+        <section class="main__section__ofertas__billete">
+          <span
+            class="main__section__ofertas__billete__span main__section__ofertas__billete__span--desplazamiento">Almeria-Valencia</span>
+          <span
+            class="main__section__ofertas__billete__span main__section__ofertas__billete__span--horaSalida">15:10</span>
+          <span
+            class="main__section__ofertas__billete__span main__section__ofertas__billete__span--horaLlegada">16:58</span>
+          <span
+            class="main__section__ofertas__billete__span main__section__ofertas__billete__span--empresa">EUROMED</span>
+          <span
+            class="main__section__ofertas__billete__span main__section__ofertas__billete__span--precio">30,60€</span>
+        </section>
+
+        <section class="main__section__ofertas__billete">
+          <span
+            class="main__section__ofertas__billete__span main__section__ofertas__billete__span--desplazamiento">Salamanca-Cuenca</span>
+          <span
+            class="main__section__ofertas__billete__span main__section__ofertas__billete__span--horaSalida">18:20</span>
+          <span
+            class="main__section__ofertas__billete__span main__section__ofertas__billete__span--horaLlegada">22:10</span>
+          <span
+            class="main__section__ofertas__billete__span main__section__ofertas__billete__span--empresa">LD-AVE</span>
+          <span
+            class="main__section__ofertas__billete__span main__section__ofertas__billete__span--precio">57,90€</span>
+        </section>
+
+        <section class="main__section__ofertas__billete">
+          <span
+            class="main__section__ofertas__billete__span main__section__ofertas__billete__span--desplazamiento">Cordoba-Albacete</span>
+          <span
+            class="main__section__ofertas__billete__span main__section__ofertas__billete__span--horaSalida">8:38</span>
+          <span
+            class="main__section__ofertas__billete__span main__section__ofertas__billete__span--horaLlegada">13:58</span>
+          <span
+            class="main__section__ofertas__billete__span main__section__ofertas__billete__span--empresa">AVE-AVE</span>
+          <span
+            class="main__section__ofertas__billete__span main__section__ofertas__billete__span--precio">68,70€</span>
+        </section>
+      </article>
+
+    </section>
+    <aside class="main__aside main__aside--right">
+      <img class="main__aside__img" src="../../public/media/banner_tren2.png" alt="bannerPublicidad2">
+      <img class="main__aside__img" src="../../public/media/banner_tren4.png" alt="bannerPublicidad4">
+      <img class="main__aside__img" src="../../public/media/banner_tren6.png" alt="bannerPublicidad6">
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__paragraph footer__paragraph--autor">Ruben Juarez, Angel Mansilla y Carlos Piña</p>
+    <p class="footer__paragraph footer__paragraph--marca">SobreRailes®</p>
+  </footer>
 </body>
 
 </html>

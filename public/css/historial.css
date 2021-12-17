@@ -1,12 +1,7 @@
 * {
     box-sizing: inherit;
   }
-  
-  body, html {
-    width: 100%;
-    height: 100%;
-  }
-  
+
   body {
     display: grid;
     grid-template-areas:
@@ -26,7 +21,7 @@
       'footer footer footer';
     background-color: #0066B3;
   }
-  
+
   .cabecera {
     grid-area: header;
     width: 100%;
@@ -36,7 +31,7 @@
     border-radius: 10px;
     margin-top: 5px;
   }
-  
+
   .cabecera__nav {
     display: flex;
     justify-content: center;
@@ -44,7 +39,7 @@
     padding: 5px;
     height: 100%;
   }
-  
+
   .cabecera__nav__a {
     display: flex;
     align-items: center;
@@ -60,7 +55,7 @@
     padding: 15px;
     height: 6px;
   }
-  
+
   .cabecera__nav__a:hover{
       transition: 7ms;
       background-color: #B36F09;
@@ -68,14 +63,14 @@
       transform: scale(1.1);
       font-style: italic;
   }
-  
+
   .main {
     grid-area: main;
     display: flex;
     justify-content: center;
     margin-top: 5%;
   }
-  
+
   .main__section {
     width: 80%;
     text-align: center;
@@ -87,28 +82,28 @@
     background-color: #FFA319;
     border-radius: 5%;
   }
-  
+
   .main__section__header {
     background-color: #B36F09;
   }
-  
+
   .main__section__ofertas {
     background-color: #FFAD33;
   }
-  
+
   .main__aside--left {
     width: 20%;
   }
-  
+
   .main__aside--right {
     width: 20%;
   }
-  
+
   .main__aside__img {
     width: 96%;
     border: solid 2px #B36F09;
   }
-  
+
   .footer {
     grid-area: footer;
     display: flex;
