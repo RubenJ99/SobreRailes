@@ -1,11 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap'); /*Titulos*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+/*Titulos*/
 /*font-family: 'Oswald', sans-serif;*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); /*Resto*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/*Resto*/
 /*font-family: 'Montserrat', sans-serif;*/
 @import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Montserrat&family=Oswald:wght@500&display=swap');
+
 /*font-family: 'Bakbak One', cursive;*/
 * {
-    box-sizing: none;
-    margin:0;
-    padding:0;
+  box-sizing: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../../public/media/fondo_rail.png);
+  background-attachment: fixed;
+  background-size: 100%;
+  background-color: white;
 }
