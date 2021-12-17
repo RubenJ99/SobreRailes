@@ -1,26 +1,25 @@
 "use strict";
 
 const monthCtx = document.getElementById("monthlySales").getContext("2d");
+const DATA_COUNT = 7;
+const NUMBER_CFG = {count: DATA_COUNT, min: 0, max: 100};
+
+const labels = ['Enero','Febrero','Marzo','Abril','Mayo','Junio'];
+
 
 const data = {
   labels: labels,
   datasets: [
     {
-      label: "Dataset 1",
-      data: Utils.numbers(NUMBER_CFG),
-      borderColor: Utils.CHART_COLORS.red,
-      backgroundColor: Utils.CHART_COLORS.red,
-    },
-    {
-      label: "Dataset 2",
-      data: Utils.numbers(NUMBER_CFG),
-      borderColor: Utils.CHART_COLORS.blue,
-      backgroundColor: Utils.CHART_COLORS.blue,
+      label: "Gastos",
+      data: [45,50,60,20,0,40],
+      borderColor: 'rgb(0, 102, 179)',
+      backgroundColor: 'rgb(25, 156, 255)',
     },
   ],
 };
 
-const config = {
+const config = new Chart(monthCtx, {
   type: "line",
   data: data,
   options: {
@@ -60,4 +59,7 @@ const config = {
       },
     },
   },
-};
+});
+
+config.reset();
+config.render();

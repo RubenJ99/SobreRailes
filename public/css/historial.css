@@ -121,3 +121,7 @@
     width: 480px;
     height: 600px;
 }
+
+.main__section__canvas > h4 {
+    font-family: 'Bakbak One', cursive;
+}
