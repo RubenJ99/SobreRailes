@@ -57,7 +57,10 @@ body {
   font-weight: bolder;
   color: black;
   border-radius: 10px;
-  margin-left: 10px;
+  margin-left: 15px;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  padding: 15px;
 }
 
 .main {
@@ -116,4 +119,12 @@ body {
   background-color: black;
   color: white;
   margin-top: 30px;
+}
+
+.cabecera__nav__a:hover{
+  transition: 7ms;
+  background-color: #B36F09;
+  cursor: pointer;
+  transform: scale(1.1);
+  font-style: italic;
 }
