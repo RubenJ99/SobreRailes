@@ -10,7 +10,11 @@
       'footer footer footer';
     margin: 2%;
   }
-  
+  canvas{
+    background-image: url('/public/media/fondoJuego.jpg');
+    background-repeat: none;
+    background-size: cover;
+  }
   .cabecera {
     grid-area: header;
     width: 100%;
