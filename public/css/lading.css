@@ -42,8 +42,8 @@ body {
 .cabecera__nav {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: row;
+  padding: 5px;
   height: 100%;
 }
 
@@ -51,7 +51,6 @@ body {
   display: flex;
   align-items: center;
   padding: 5px;
-  background-color: #FFA319;
   background: linear-gradient(to bottom, #FFA319, #FFAD33 80%, #FFA319);
   border: solid 3px #B36F09;
   font-weight: bolder;
@@ -61,6 +60,7 @@ body {
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
   padding: 15px;
+  height: 6px;
 }
 
 .main {
@@ -124,6 +124,7 @@ body {
 .cabecera__nav__a:hover{
   transition: 7ms;
   background-color: #B36F09;
+  background: linear-gradient(to bottom, #B36F09, #B36F09 80%, #B36F09);
   cursor: pointer;
   transform: scale(1.1);
   font-style: italic;
